@@ -16,3 +16,8 @@ target_include_directories(package_b
 ament_target_dependencies(package_b package_a)
 
 ament_package()
+
+set(CPACK_GENERATOR "RPM")
+set(CPACK_PACKAGE_NAME "package_b")
+
+include(CPack)

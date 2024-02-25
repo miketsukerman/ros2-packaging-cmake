@@ -29,3 +29,8 @@ install(
 )
 
 ament_package()
+
+set(CPACK_GENERATOR "RPM")
+set(CPACK_PACKAGE_NAME "package_a")
+
+include(CPack)
