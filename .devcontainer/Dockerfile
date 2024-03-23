@@ -15,6 +15,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip
 
+RUN apt-get install -y clang-format
 RUN apt-get install -y rpm
 
 ENV SHELL /bin/bash

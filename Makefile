@@ -6,4 +6,7 @@ build:
 package: 
 	. /opt/ros/iron/setup.sh && colcon build --cmake-target package --cmake-target-skip-unavailable
 
-.PHONY: build package
+clean: 
+	rm -rf build install log
+
+.PHONY: build package clean
